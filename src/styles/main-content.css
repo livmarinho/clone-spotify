@@ -1,0 +1,351 @@
+/* HEADER */
+
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    padding-left: 20rem;
+    padding-right: 3.5rem;
+}
+
+.header-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: .625rem;
+    border-radius: .5rem;
+    background-color: var(--cor-cinza);
+    padding: .75rem;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seta-esquerda {
+    margin-right: 1.25rem;
+
+}
+
+.seta-esquerda,
+.seta-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--bg-icone);
+    background-color: var(--bg-seta);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header-busca {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: .5rem;
+    background-color: var(--cor-varpreto);
+    border-radius: 31.25rem;
+    border: 1px solid transparent;
+}
+
+.header-busca img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: .625rem;
+}
+
+.header-busca input {
+    background: transparent;
+    border: none;
+    padding: 0 6.25rem 0 0.75rem;
+    color: var(--cor-branco);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.subscribe {
+    color: #a7a7a7;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 2rem;
+    border: none;
+
+}
+
+.login {
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2.5rem;
+}
+
+.header-busca:hover {
+  border: 1px solid var(--cor-branco);
+}
+
+.subscribe:hover {
+  transform: scale(1.04);
+  color: var(--cor-branco);
+
+}
+
+.login:hover {
+  transform: scale(1.04);
+}
+
+/* PLAYLIST */
+.playlist-container {
+    height: 68vh;
+    padding-top: 1rem;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: var(--cor-cinza);
+}
+
+.playlist {
+    margin: 24px;
+}
+
+#bemvindo {
+    color: var(--cor-branco);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.secoes {
+    color: var(--cor-branco);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* SCROLL */
+.offer-scroll-container {
+    max-height: 43vh;
+    margin: 1.5rem;
+    overflow-y: auto;
+  }
+  .offer-scroll-container::-webkit-scrollbar {
+    width: 1px;
+  }
+  .offer-scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  /* FIM SCROLL */
+
+.offer-lista-item {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem; 
+    margin-bottom: 1rem;
+  
+    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
+    display: grid;
+    gap: 1rem;
+    grid-gap: 1.5rem;
+    margin: 0 auto;
+  } 
+
+
+  .cards {
+    position: relative; 
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: .5rem;
+  }
+
+  .cards span {
+    padding: 1rem;
+    position: absolute;
+    color: var(--cor-branco);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /* COLOR CARDS */
+.card1 {
+    background-color: rgb(0, 100, 80);
+  }
+  .card2 {
+    background-color: rgb(132, 0, 231);
+  }
+  .card3 {
+    background: rgb(30, 50, 100);
+  }
+  .card4 {
+    background: rgb(140, 25, 50);
+  }
+  .card5 {
+    background: rgb(232, 17, 91);
+  }
+  .card6 {
+    background: rgb(83, 122, 161);
+  }
+  .card7 {
+    background: rgb(142, 102, 172);
+  }
+  .card8 {
+    background: rgb(20, 138, 8);
+  }
+  .card9 {
+    background: rgb(30, 50, 100);
+  }
+  .card10 {
+    background: rgb(233, 20, 41);
+  }
+  .card11 {
+    background: rgb(80, 55, 80);
+  }
+  .card12 {
+    background: rgb(216, 64, 0);
+  }
+  .card13 {
+    background: rgb(186, 93, 7);
+  }
+  .card14 {
+    background: rgb(0, 30, 80);
+  }
+  .card15 {
+    background: rgb(60, 30, 80);
+  }
+  /* FIM COLOR CARDS */
+  
+  .offer-lista-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+  }
+
+  /* CARD ARTISTA */
+
+.artista {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .grid-container {
+    grid-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    min-width: 767px;
+  }
+  .artista-card {
+    background: #181818;
+    border-radius: .5rem;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .artista-card:hover {
+    background-color: #252525;
+  }
+
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .artista-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .card-texto {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-branco);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 3.875rem;
+  }
+  
+  .card-texto a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .artista-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+  }
+  
+  .artista-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  
+  .play {
+    position: relative;
+  }
+
+  .play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  
+  .artista-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  #resultado-artista {
+    padding: 1.25rem;
+  }
+  
+  

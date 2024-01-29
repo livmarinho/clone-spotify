@@ -1,0 +1,238 @@
+body {
+    background-color: var(--cor-background);
+    font-family: var(--fonte-principal);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.75rem;
+    width: 18.75rem;
+}
+
+.sidebar .logo {
+    background: var(--cor-cinza);
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar .logo img {
+    width: 5rem;
+}
+
+.sidebar-navigation {
+    background-color: var(--cor-cinza);
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar nav ul {
+    margin-top: 1.25rem;
+    padding: 0 1.25rem 0.625rem 1.25rem;
+}
+
+.sidebar ul li {
+    padding: 0.625rem 0;
+
+}
+
+.sidebar nav ul li a {
+    color: var(--cor-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.biblioteca {
+    background-color: var(--cor-cinza);
+    color: var(--cor-color);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-top: .625rem;
+
+}
+.biblioteca-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.biblioteca-botao {
+    display: flex;
+    margin-right: .625rem;
+    color: var(--cor-color);
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1.25rem .625rem;
+    
+}
+.fa-solid {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--cor-color);
+    margin-right: .625rem;
+    padding-right: 0.5rem;
+}
+
+.fa-book {
+    margin-left: 1.2rem;
+}
+
+.fa-plus {
+    margin: 1.5rem .625rem;
+}
+
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background-color: #242424;
+    color: var(--cor-color);
+    font-weight: 600;
+    font-size: .875rem;
+    margin: .5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    
+}
+
+.section-playlist-conteudo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto {
+    padding-bottom: .875rem;
+    color: var(--cor-branco);
+    
+    font-weight: 400;
+}
+
+.titulo {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: .75rem;
+}
+
+.section-playlist-botao {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-branco);
+    color: #000;
+    border-radius: 1.25rem;
+    font-size: .75rem;
+    font-weight: 700;
+    
+    text-decoration: none;
+    text-transform: none;
+    padding: .625rem;
+    margin-top: 0.75rem;
+    border: 0;
+    width: 8.063rem;
+   
+}
+
+.cookies {
+    margin: 1.563rem 1.25rem;
+}
+
+.cookies a {
+    color: var(--cor-color);
+    font-weight: 500;
+    font-size: .625rem;
+    text-decoration: none;
+
+}
+
+.cookies a:hover {
+    text-decoration: underline;
+}
+
+.linguagem-botao {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--cor-color);
+    color: var(--cor-branco);
+    cursor: pointer;
+    font-weight: 700;
+    padding: .5rem;
+    width: 12.625rem;
+    margin: .5rem;
+    border-radius: 1.25rem;
+}
+
+.fa-globe {
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.rodape {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .938rem 2.5rem;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+}
+
+.rodape, .rodape-texto {
+    flex-shrink: 0;
+}
+
+.rodape-titulo {
+    font-weight: .75rem;
+    font-weight: 700;
+ 
+    color: var(--cor-branco);
+    margin-bottom: .5rem;
+}
+.rodape-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+ 
+    color: var(--cor-branco);
+}
+
+.botao {
+    align-items: center;
+    background-color: var(--cor-branco);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+
+}
+
+.botao-texto {
+    background-color: transparent;
+    border: 0;
+  
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+    
